@@ -25,7 +25,7 @@ while(1)
     end
 end
 receive = fread(t, nBytes);
-pid = int64(str2double(num2str(char(receive))));
+pid = int64(str2double(char(receive)));
 fclose(t);
 
 % start talking
@@ -45,7 +45,7 @@ while(1)
         end
     end
     receive = fread(t,nBytes);
-    str = num2str(char(receive));
+    str = char(receive);
     fprintf('%s\n', str);
     fclose(t);
     pause(0.0001);
