@@ -42,7 +42,6 @@ while(1)
         fwrite(t, buf);
     catch error
         fprintf('Connection refused');
-        break;
     end
     while(1) 
         nBytes = get(t,'BytesAvailable');
