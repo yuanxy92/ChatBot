@@ -1,3 +1,3 @@
 call activate aiml 
-python %1\chat.py %1
+python %1\chat_simsimi.py %1
 call deactivate
