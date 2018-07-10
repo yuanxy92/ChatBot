@@ -111,6 +111,7 @@ if __name__ == '__main__':
         cont = ll.talkWithTuling(userName)
         dd = loads(cont)
         cont = Trans.toen((dd['text']));  
+        print dd['text']
         print cont
 
         # if dd['code'] == 100000:
