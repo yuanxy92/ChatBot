@@ -11,7 +11,7 @@ system(sprintf('cmd.exe /k %s\\run_in_anaconda.bat %s &', python_dir, python_dir
 % system(sprintf('cmd.exe /c %s\\run_in_anaconda.bat %s &', python_dir, python_dir));
 
 fprintf('Wait for some seconds, the aiml server need some time to start!\n');
-% pause(7);
+pause(7);
 
 % create tcpip link
 t = tcpip('127.0.0.1', 54377, 'Timeout', 1, 'InputBufferSize', 10240);
